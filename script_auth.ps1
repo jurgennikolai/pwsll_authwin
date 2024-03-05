@@ -22,7 +22,7 @@ foreach ($hostname in $hostnames)
                 return $false
             }
         }
-        if($resul){
+        if($result){
             Add-Content -Path $pathReport -Value "$hostname, True, True, Access Successful ."
         }else{
             Add-Content -Path $pathReport -Value "$hostname, True, False, DMZ o Incorrect Credentials."
